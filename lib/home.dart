@@ -68,38 +68,39 @@ class _HomeViewState extends State<HomeView> {
                      AlbumCard(
                        label: "Top 20",
                        image: AssetImage("assets/album1.jpg"),
-                       onTap: (){
+                       func: (){
 
-                         Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView()));
-                       },),
+                         Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView(title:'top 20')));
+                       },
+                       ),
                       SizedBox(width: 16,),
                       AlbumCard(
                         label: "True Love",
                         image: AssetImage("assets/album2.jpg"),
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView()));
+                        func: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView(title:'true love')));
                         },
                       ),
                       SizedBox(width: 16,),
                       AlbumCard(
                         label: "Trending",
                         image: AssetImage("assets/album3.jpg"),
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView()));
+                        func: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView(title: 'Tending',)));
                         },),
                       SizedBox(width: 16,),
                       AlbumCard(
                         label: "All time Fav",
                         image: AssetImage("assets/album4.jpg"),
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView()));
+                        func: (){
+                           Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView(title: 'All time fav',)));
                         },),
                       SizedBox(width: 16,),
                       AlbumCard(
                         label: "Glorious",
                         image: AssetImage("assets/album5.jpg"),
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView()));
+                        func: (){
+                           Navigator.push(context, MaterialPageRoute(builder: (context)=> AlbumView(title: 'Glorious',)));
                         },),
                     ],
                   ),
